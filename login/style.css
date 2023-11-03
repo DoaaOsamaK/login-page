@@ -1,0 +1,129 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at 50% 50%, rgba(237, 161, 193, 0.5) 0%, rgba(250, 178, 172, 0.5) 25.5%, rgba(190, 228, 210, 0.5) 62.3%, rgba(215, 248, 247, 0.5) 93.8%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.all-sections {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    border: 3px solid #ffffff;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Full-width */
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 10px; /* Add margin for spacing */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+
+
+.nav-item:hover {
+    color: #ACAD94;
+}
+
+.welcome {
+    color: #ACAD94;
+    text-align: center;
+    font-size: 24px;
+}
+
+.login {
+    color: #fff;
+    background-color: #ACAD94;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login:hover {
+    background-color: #384D48;
+    color: #fff;
+}
+
+.box {
+    background-color: #fff;
+    color: #384D48;
+    height: 35px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ACAD94;
+}
+
+.about {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cotact {
+    color: #ACAD94;
+}
+
+.follwo {
+    color: #ad9aa3;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .all-sections {
+        flex-direction: column;
+    }
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .nav-item {
+        margin: 0 10px; /* Add margin for spacing */
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+}
